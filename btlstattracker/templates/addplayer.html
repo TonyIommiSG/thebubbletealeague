@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <form method="POST">
+    {{form.hidden_tag()}}
+    {{form.summoner.label}}{{form.summoner}}<br>
+    {{form.role.label}}{{form.role}}<br>
+    {{form.team.label}}{{form.team}}<br>
+    {{form.sub_or_player.label}}{{form.sub_or_player}}<br>
+    {{form.submit()}}
+
+  </form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+  <form method="POST">
+    {{form.hidden_tag()}}
+    {{form.blue_top.label}}{{form.blue_top}}<br>
+    {{form.blue_top_sub.label}}{{form.blue_top_sub}}<br>
+    {{form.blue_jungle.label}}{{form.blue_jungle}}<br>
+    {{form.blue_jungle_sub.label}}{{form.blue_jungle_sub}}<br>
+    {{form.blue_middle.label}}{{form.blue_middle}}<br>
+    {{form.blue_middle_sub.label}}{{form.blue_middle_sub}}<br>
+    {{form.blue_adc.label}}{{form.blue_adc}}<br>
+    {{form.blue_adc_sub.label}}{{form.blue_adc_sub}}<br>
+    {{form.blue_support.label}}{{form.blue_support}}<br>
+    {{form.blue_support_sub.label}}{{form.blue_support_sub}}<br>
+    {{form.red_top.label}}{{form.red_top}}<br>
+    {{form.red_top_sub.label}}{{form.red_top_sub}}<br>
+    {{form.red_jungle.label}}{{form.red_jungle}}<br>
+    {{form.red_jungle_sub.label}}{{form.red_jungle_sub}}<br>
+    {{form.red_middle.label}}{{form.red_middle}}<br>
+    {{form.red_middle_sub.label}}{{form.red_middle_sub}}<br>
+    {{form.red_adc.label}}{{form.red_adc}}<br>
+    {{form.red_adc_sub.label}}{{form.red_adc_sub}}<br>
+    {{form.red_support.label}}{{form.red_support}}<br>
+    {{form.red_support_sub.label}}{{form.red_support_sub}}<br>
+    {{form.submit()}}
+  </form>
+{% endblock %}

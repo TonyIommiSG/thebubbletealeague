@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <form method="POST">
+    {{form.hidden_tag()}}
+    {{form.api.label}}{{form.api}}<br>
+    {{form.match_id.label}}{{form.match_id}}<br>
+    {{form.season_number.label}}{{form.season_number}}<br>
+    {{form.game_week.label}}{{form.game_week}}<br>
+    <!-- TODO: -->
+    {# form.game_date.label #}{# form.game_date #}<br>
+    {{form.submit()}}
+
+  </form>
+{% endblock %}
